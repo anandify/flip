@@ -102,7 +102,7 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file).convert("RGB")
     
     # Display image
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
     
     # Make prediction
     result = predict_image_with_shelf_life(image)
